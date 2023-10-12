@@ -1,4 +1,7 @@
 # DataPipeline
+
+This project shows how to set up a data pipeline of your own using git hub actions and how to run a Python script as cron job with GitHub Actions. It calls an API once a week (could be any schedule you want)
+## Properties
 Create you own data pipeline using github actions . You start by extracting the data from a source (e.g., CSV, API, database). Then, you transform the data (e.g., data cleaning, normalization). Finally, you load the data into a target destination (e.g., database, data warehouse).
 
 GitHub Actions help you automate your software development workflows in the same place you store code and collaborate on pull requests and issues. You can write individual tasks, called actions, and combine them to create a custom workflow. Workflows are custom automated processes that you can set up in your repository to build, test, package, release, or deploy any code project on GitHub.
@@ -9,7 +12,10 @@ It might not be helpful for your personal project but, it will be very helpful i
 
 ![CI/CD](images/image.png)
 
-Deploying Python Application on Heroku
+### How to set up a Pipeline
+    Refer: readings/CI/CI_CD.md
+
+### Deploying Python Application on Heroku
 
     Install Heroku CLI or uding command (`brew tap heroku/brew && brew install heroku`)
     Verify if its installed using command (`heroku`)
@@ -19,8 +25,14 @@ Deploying Python Application on Heroku
     Generate Authentication Token: `heroku authorizations:create`
     'Deploy to Heroku' Action:
 
-This is how it will look like :
+### This is how it will look like :
 
 ![Alt text](images/build.png)
+
+### Do you want to schedule your pipeline ?
+   `  schedule:`
+    `- cron: '15 13 * * THU' # every thrushday at 1:15`
+  - This is how it will look like
+   ![Alt text](images/cronjob.png)
 
 For more reading https://github.blog/2022-02-02-build-ci-cd-pipeline-github-actions-four-steps/
