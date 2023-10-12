@@ -35,4 +35,7 @@ It might not be helpful for your personal project but, it will be very helpful i
   - This is how it will look like
    ![Alt text](images/cronjob.png)
 
-For more reading https://github.blog/2022-02-02-build-ci-cd-pipeline-github-actions-four-steps/
+### For more reading 
+- https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions
+- https://docs.github.com/en/actions/managing-issues-and-pull-requests/scheduling-issue-creation
+- https://github.blog/2022-02-02-build-ci-cd-pipeline-github-actions-four-steps/
