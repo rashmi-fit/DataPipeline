@@ -7,4 +7,18 @@ With GitHub Actions you can build end-to-end continuous integration (CI) and con
 
 It might not be helpful for your personal project but, it will be very helpful in a organization having multipe layers.
 
+![CI/CD](images/image.png)
+
+Deploying Python Application on Heroku
+
+    Install Heroku CLI or uding command (`brew tap heroku/brew && brew install heroku`)
+    Verify if its installed using command (`heroku`)
+    Login to Heroku CLI session: heroku login
+    Create new Heroku App: heroku create
+    (I don't want to give my personal unm/pwd everytime any change occues to authnticate and deploy. so i am using an API to do authentication)
+    Generate Authentication Token: heroku authorizations:create
+    'Deploy to Heroku' Action:
+
+
+
 For more reading https://github.blog/2022-02-02-build-ci-cd-pipeline-github-actions-four-steps/
