@@ -16,9 +16,11 @@ Deploying Python Application on Heroku
     Login to Heroku CLI session: heroku login
     Create new Heroku App: heroku create
     (I don't want to give my personal unm/pwd everytime any change occues to authnticate and deploy. so i am using an API to do authentication)
-    Generate Authentication Token: heroku authorizations:create
+    Generate Authentication Token: `heroku authorizations:create`
     'Deploy to Heroku' Action:
 
+This is how it will look like :
 
+![Alt text](images/build.png)
 
 For more reading https://github.blog/2022-02-02-build-ci-cd-pipeline-github-actions-four-steps/
